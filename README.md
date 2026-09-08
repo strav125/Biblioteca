@@ -11,9 +11,7 @@ El objetivo es organizar y visualizar mi biblioteca de una manera práctica y at
 La galería incluirá una ficha individual para cada libro, con los siguientes datos:
 - Título del libro.
 - Autor.
-- Fecha o año en que lo leí.
 - Rating o valoración personal.
 - Breve descripción del libro.
-- Estado de lectura, por ejemplo: leído, pendiente o leyendo.
 
 De esta manera, el repositorio permitirá consultar rápidamente mi biblioteca y, a medida que incorpore nuevos libros, construir un registro de mis lecturas y preferencias.
