@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffefe;
+    color: #111111;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: garamond, serif;
+    font-weight: semi-bold;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+header {
+    background-color: #2643C9;
+    padding: 20px 40px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 250px;
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0;
+}
+
+.dropdown:hover .submenu {
+    display: flex;
+}
+
+.submenu li {
+    padding: 8px 20px;
+    color: #E4692E;
+}
+
+.submenu li a {
+    color: #111111;
+    text-transform: none;
+    font-weight: normal;
+    letter-spacing: normal;
+    text-align: right
+}
+
+.submenu li a:hover {
+    color: #E4692E;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    color: #F2EFE9;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul li a {
+    color: #F2EFE9;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    color: #E4692E;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.autor {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+main > img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+main > p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+#libros {
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#libros h2 {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+    margin-bottom: 10px;
+}
+
+.tarjeta a {
+    color: #2643C9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tarjeta a:hover {
+    color: #E4692E;
+}
+
+.libro-detalle {
+    display: flex;
+    gap: 50px;
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.portada {
+    flex: 1;
+}
+
+.portada img {
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.info-libro {
+    flex: 1;
+    padding-top: 60px;
+}
+
+.info-libro h1 {
+    margin-bottom: 10px;
+}
+
+.info-libro h3 {
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #444444;
+}
+
+.info-libro p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.rating {
+    font-weight: bold;
+    color: #E4692E;
+}
+
+.volver {
+    display: block;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    padding: 0 40px;
+    color: #2643C9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.volver:hover {
+    color: #E4692E;
+}
+
+footer {
+    background-color: #142365;
+    padding: 20px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 1.25rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .libro-detalle {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .info-libro {
+        padding-top: 1.25rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .submenu {
+        min-width: 200px;
+    }
+
+    .tarjeta {
+        width: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .tarjeta {
+        width: 45%;
+    }
+
+    .libro-detalle {
+        padding: 1rem;
+    }
+
+    .volver {
+        padding: 0 20px;
+    }
+}

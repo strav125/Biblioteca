@@ -1,31 +1,112 @@
 <!DOCTYPE html>
-<html lang-"es">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name= "viewport" content= "width-device-width, initial-scale=1.0">
-<title>Mi Biblioteca: lecturas, historias y opiniones </title>
-<meta author="Sol Travetto">
+<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi biblioteca: lecturas, historias y opiniones </title>
+<meta name="author" content="Sol Travetto">
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body> 
     <header>
         <nav>
-            <ul>
-                <li> Sobre mi biblioteca</li>
-                <li> Libros </li>
-                <li> Autores </li>
+    <ul>
+        <li><a href="index.html">Sobre mi biblioteca</a></li>
+        <li class="dropdown">
+            <a href="index.html#libros">Libros</a>
+            <ul class="submenu">
+                <li><a href="libro1.html">A Little Life</a></li>
+                <li><a href="libro2.html">Just Kids</a></li>
+                <li><a href="libro3.html">Normal People</a></li>
+                <li><a href="libro4.html">Conversations With Friends</a></li>
+                <li><a href="libro5.html">Beautiful World, Where Are You</a></li>
+                <li><a href="libro6.html">Happy Place</a></li>
+                <li><a href="libro7.html">Funny Story</a></li>
+                <li><a href="libro8.html">One Golden Summer</a></li>
+                <li><a href="libro9.html">Beach Read</a></li>
+                <li><a href="libro10.html">Book Lovers</a></li>
             </ul>
-        </nav>
+        </li>
+    </ul>
+</nav>
     </header>
+
     <main>
         <h1> Mi biblioteca </h1>
-        <h4> Por: Sol Travetto </h4>
-        <img src="Biblioteca.png" alt="Foto estante">
+        <p class="autor"> Por: Sol Travetto </p>
+        <img src="img/Biblioteca.png" alt="Foto estante">
         <p>En la estanteria de mi casa, hay muchos libros. Toda la familia tiene libros ahi. 
         </p>
+        <section id="libros">
+            <h2>Los libros de mi estante</h2>
+                
+                <div class="tarjeta">
+                    <a href="libro1.html">
+                    <img src="img/libro1.jpg" alt="Portada Libro 1"> </a>
+                    <a href="libro1.html">Ver más</a>
+                </div>
+
+                <div class="tarjeta">
+                    <a href="libro2.html">
+                    <img src="img/libro2.jpg" alt="Portada Libro 2"> </a>
+                    <a href="libro2.html">Ver más</a>
+                </div>
+
+                <div class="tarjeta">
+                    <a href="libro3.html">
+                    <img src="img/libro3.jpg" alt="Portada Libro 3"> </a>
+                    <a href="libro3.html">Ver más</a>
+                </div>  
+
+                <div class="tarjeta">
+                    <a href="libro4.html">
+                    <img src="img/libro4.jpg" alt="Portada Libro 4"> </a>
+                    <a href="libro4.html">Ver más</a>
+                </div>
+
+                <div class="tarjeta">
+                    <a href="libro5.html">
+                    <img src="img/libro5.jpg" alt="Portada Libro 5"> </a>
+                    <a href="libro5.html">Ver más</a>
+                </div>
+
+                <div class="tarjeta">
+                    <a href="libro6.html">
+                    <img src="img/libro6.jpg" alt="Portada Libro 6"> </a>
+                    <a href="libro6.html">Ver más</a>
+                </div>
+
+                <div class="tarjeta">
+                    <a href="libro7.html">
+                    <img src="img/libro7.jpg" alt="Portada Libro 7"> </a>
+                    <a href="libro7.html">Ver más</a>
+                </div>
+
+                <div class="tarjeta">
+                    <a href="libro8.html">
+                    <img src="img/libro8.jpg" alt="Portada Libro 8"> </a>
+                    <a href="libro8.html">Ver más</a>
+                </div>
+
+                 <div class="tarjeta">
+                    <a href="libro9.html">
+                    <img src="img/libro9.jpg" alt="Portada Libro 9"> </a>
+                    <a href="libro9.html">Ver más</a>
+                </div>
+
+                <div class="tarjeta">
+                    <a href="libro10.html">
+                    <img src="img/libro10.jpg" alt="Portada Libro 10"> </a>
+                    <a href="libro10.html">Ver más</a>
+                </div>
+
+        </section>
+
     </main>
 
     <footer>
-        <h6> Derechos reservados </h6>
+        <p> Derechos reservados </p>
     </footer>
 </body>
 </html>
